@@ -10,7 +10,7 @@ import SwiftUI
 struct MainMenu: View {
     
 //    Selected tab
-    @State var selectedTab = "Grafica Lineal"
+    @State var selectedTab = "Grafica de Barras"
 //    Animation Namespace
     @Namespace var animation
     
@@ -22,7 +22,9 @@ struct MainMenu: View {
                 .ignoresSafeArea()
             
 //            Side Menu
-            SideMenu(selectedTab: $selectedTab)
+            ScrollView(getRect().height < 750 ? .vertical : .init(), showsIndicators: false, content: {
+                SideMenu(selectedTab: $selectedTab)
+            })
             
             ZStack{
 //                Two background Cards
@@ -76,6 +78,7 @@ struct MainMenu: View {
                             }
                             .rotationEffect(.init(degrees: showMenu ? 50 : 0))
                         }
+                        .contentShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     })
                     .padding()
                     

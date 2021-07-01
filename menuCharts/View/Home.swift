@@ -20,21 +20,16 @@ struct Home: View {
         
         TabView(selection: $selectedTab){
             
-            GraficaLineal()
-                .tag("Grafica Lineal")
-            GraficaLineal2()
-                .tag("Grafica Lineal 2")
-            GraficadeBarras()
+            BarChart()
                 .tag("Grafica de Barras")
             GraficadePastel()
                 .tag("Grafica de Pastel")
-//            Mapas()
-//                .tag("Mapas")
-//            Documentos()
-//                .tag("Documentos")
-            Camaras()
+            Mapas()
+                .tag("Mapas")
+            pdfView()
+                .tag("Documentos")
+            CameraView()
                 .tag("Camaras")
-            
         }
     }
 }

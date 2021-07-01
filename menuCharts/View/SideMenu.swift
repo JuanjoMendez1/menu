@@ -33,8 +33,7 @@ struct SideMenu: View {
 //                Tab Buttons
 
                 VStack(spacing: 10){
-                    TabButton(image: "line.diagonal", title: "Grafica Lineal", selectedTab: $selectedTab, animation: animation)
-                    TabButton(image: "line.diagonal.arrow", title: "Grafica Lineal 2", selectedTab: $selectedTab, animation: animation)
+//                    TabButton(image: "line.diagonal", title: "Grafica Lineal", selectedTab: $selectedTab, animation: animation)
                     TabButton(image: "chart.bar", title: "Grafica de Barras", selectedTab: $selectedTab, animation: animation)
                     TabButton(image: "chart.pie", title: "Grafica de Pastel", selectedTab: $selectedTab, animation: animation)
                     TabButton(image: "map", title: "Mapas", selectedTab: $selectedTab, animation: animation)
