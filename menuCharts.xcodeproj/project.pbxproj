@@ -16,6 +16,8 @@
 		B943EBF7268E205C007340A0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B943EBF3268E1F98007340A0 /* Charts.framework */; };
 		B943EBF8268E205C007340A0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B943EBF3268E1F98007340A0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B943EBF9268E205C007340A0 /* ChartsTests.xctest in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = B943EBF5268E1F98007340A0 /* ChartsTests.xctest */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B943EC01268E2BC8007340A0 /* DownloadTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B943EC00268E2BC8007340A0 /* DownloadTaskModel.swift */; };
+		B943EC03268E3118007340A0 /* DownloadProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B943EC02268E3118007340A0 /* DownloadProgressView.swift */; };
 		B9946A36268A17500056BD7F /* menuChartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9946A35268A17500056BD7F /* menuChartsApp.swift */; };
 		B9946A38268A17500056BD7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9946A37268A17500056BD7F /* ContentView.swift */; };
 		B9946A3A268A17560056BD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9946A39268A17560056BD7F /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		B943EBD7268E1E19007340A0 /* TransactionBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBarChartView.swift; sourceTree = "<group>"; };
 		B943EBD9268E1E24007340A0 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		B943EBED268E1F98007340A0 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../Downloads/Charts-master 3/Charts.xcodeproj"; sourceTree = "<group>"; };
+		B943EC00268E2BC8007340A0 /* DownloadTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTaskModel.swift; sourceTree = "<group>"; };
+		B943EC02268E3118007340A0 /* DownloadProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressView.swift; sourceTree = "<group>"; };
 		B9946A32268A17500056BD7F /* menuCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = menuCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9946A35268A17500056BD7F /* menuChartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuChartsApp.swift; sourceTree = "<group>"; };
 		B9946A37268A17500056BD7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +156,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B943EBFD268E2B8E007340A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B943EC00268E2BC8007340A0 /* DownloadTaskModel.swift */,
+				B943EC02268E3118007340A0 /* DownloadProgressView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B9946A29268A174F0056BD7F = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +185,7 @@
 		B9946A34268A17500056BD7F /* menuCharts */ = {
 			isa = PBXGroup;
 			children = (
+				B943EBFD268E2B8E007340A0 /* ViewModel */,
 				B943EBCE268E1D7E007340A0 /* helper */,
 				B943EBCD268E1CFB007340A0 /* Charts */,
 				B943EBCC268E1CEA007340A0 /* PDF */,
@@ -305,9 +319,11 @@
 				B943EBD0268E1D91007340A0 /* WebView.swift in Sources */,
 				B9946A48268A63540056BD7F /* TabButton.swift in Sources */,
 				B943EBD4268E1DCA007340A0 /* pdfView.swift in Sources */,
+				B943EC01268E2BC8007340A0 /* DownloadTaskModel.swift in Sources */,
 				B943EBD2268E1DAE007340A0 /* CameraView.swift in Sources */,
 				B943EBD6268E1E0C007340A0 /* Transactions.swift in Sources */,
 				B9946A46268A17B40056BD7F /* MainMenu.swift in Sources */,
+				B943EC03268E3118007340A0 /* DownloadProgressView.swift in Sources */,
 				B943EBDA268E1E24007340A0 /* BarChart.swift in Sources */,
 				B9946A4C268A751A0056BD7F /* SideMenu.swift in Sources */,
 				B943EBD8268E1E19007340A0 /* TransactionBarChartView.swift in Sources */,
